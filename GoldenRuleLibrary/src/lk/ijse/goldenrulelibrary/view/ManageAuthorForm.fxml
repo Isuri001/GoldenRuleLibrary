@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.goldenrulelibrary.controller.ManageAuthorFormController">
+   <children>
+      <ImageView fitHeight="1105.0" fitWidth="2101.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/stylish-soft-blue-curve-lines-abstract-background.jpg" />
+         </image></ImageView>
+      <AnchorPane fx:id="ManageAuthorContext" layoutY="2.0" prefHeight="1103.0" prefWidth="2101.0" stylesheets="@../stylesheet/ManageAuthors.css">
+         <children>
+            <Label layoutX="47.0" layoutY="295.0" prefHeight="41.0" prefWidth="96.0" text="Author ID : " />
+            <Label fx:id="lblAuthorId" layoutX="143.0" layoutY="295.0" prefHeight="41.0" prefWidth="363.0" />
+            <JFXTextField fx:id="txtAuthorName" layoutX="47.0" layoutY="359.0" prefHeight="31.0" prefWidth="458.0" promptText="Author Name" />
+            <JFXTextField fx:id="txtAuthorSubject" layoutX="47.0" layoutY="424.0" opacity="0.33" prefHeight="31.0" prefWidth="458.0" promptText="Author Subject">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="btnAddAuthor" layoutX="52.0" layoutY="572.0" onAction="#btnAddAuthorOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageAuthors.css" text="Add Author">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnClear" layoutX="276.0" layoutY="572.0" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageAuthors.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <TableView fx:id="tblAuthor" layoutX="612.0" layoutY="148.0" prefHeight="628.0" prefWidth="793.0">
+               <columns>
+                  <TableColumn fx:id="columnId" prefWidth="169.0" text="Au_ID" />
+                  <TableColumn fx:id="columnName" minWidth="0.0" prefWidth="193.0" text="Au_Name" />
+                  <TableColumn fx:id="columnQualification" prefWidth="229.0" text="Au_Qualification" />
+                  <TableColumn fx:id="columnSubject" prefWidth="201.0" text="Subject" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtSearch" layoutX="729.0" layoutY="54.0" prefHeight="54.0" prefWidth="333.0" promptText="Search Author" />
+            <RadioButton fx:id="rdId" layoutX="1182.0" layoutY="70.0" mnemonicParsing="false" selected="true" text="Id" textFill="#171717">
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnGroup" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rdName" layoutX="1256.0" layoutY="69.0" mnemonicParsing="false" text="Name" textFill="#171717" toggleGroup="$btnGroup">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <Separator layoutX="547.0" orientation="VERTICAL" prefHeight="1103.0" prefWidth="0.0" />
+            <JFXButton fx:id="btnSearch" layoutX="1051.0" layoutY="48.0" onAction="#btnSearchOnAction" prefHeight="64.0" prefWidth="67.0">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/search%20(4).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBack" layoutX="1734.0" layoutY="55.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="71.0" stylesheets="@../stylesheet/BorrowedBookRecords.css" text="BACK" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtAuthorQualification" layoutX="47.0" layoutY="490.0" opacity="0.33" prefHeight="31.0" prefWidth="458.0" promptText="Author Qualification">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.goldenrulelibrary.controller.ManageBooksFormController">
+   <children>
+      <ImageView fitHeight="1025.0" fitWidth="1984.0" layoutX="10.0" layoutY="-15.0" opacity="0.67" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/stylish-soft-blue-curve-lines-abstract-background.jpg" />
+         </image></ImageView>
+      <AnchorPane fx:id="ManageBookFormContext" layoutX="8.0" prefHeight="1010.0" prefWidth="1984.0" stylesheets="@../stylesheet/ManageBooksForm.css">
+         <children>
+            <Label layoutX="56.0" layoutY="308.0" prefHeight="41.0" prefWidth="96.0" text="Book ID : " textFill="#1b0101" />
+            <Label fx:id="lblBookId" layoutX="152.0" layoutY="308.0" prefHeight="41.0" prefWidth="363.0" textFill="#1e0202" />
+            <JFXTextField fx:id="txtName" layoutX="56.0" layoutY="372.0" prefHeight="31.0" prefWidth="458.0" promptText="Name" />
+            <JFXTextField fx:id="txtEdition" layoutX="56.0" layoutY="428.0" prefHeight="31.0" prefWidth="458.0" promptText="Edition" />
+            <JFXButton fx:id="btnAddBook" layoutX="61.0" layoutY="730.0" onAction="#btnAddBookOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageBooksForm.css" text=" Add Book">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnClear" layoutX="275.0" layoutY="730.0" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageBooksForm.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <TableView fx:id="tblBookDetails" layoutX="622.0" layoutY="176.0" onMouseClicked="#tblBookClickOnAction" prefHeight="628.0" prefWidth="808.0">
+               <columns>
+                  <TableColumn fx:id="colBookId" prefWidth="84.0" text="ID" />
+                  <TableColumn fx:id="colBookName" minWidth="0.0" prefWidth="157.0" text="Name" />
+                  <TableColumn fx:id="colBookEdition" prefWidth="210.0" text="Edition" />
+                  <TableColumn fx:id="colPublisherId" prefWidth="103.0" text="Publisher ID" />
+                  <TableColumn fx:id="colAuthorId" prefWidth="122.0" text="Author Id" />
+                  <TableColumn fx:id="colCatagoryId" prefWidth="131.0" text="Catagory Id" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtSearch" layoutX="606.0" layoutY="72.0" prefHeight="54.0" prefWidth="333.0" promptText="Search Book" />
+            <RadioButton fx:id="rdId" layoutX="1006.0" layoutY="86.0" mnemonicParsing="false" selected="true" text="Id" textFill="#110000">
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdName" layoutX="1093.0" layoutY="89.0" mnemonicParsing="false" text="Name" textFill="#170202" toggleGroup="$btnGroup" />
+            <Separator layoutX="546.0" orientation="VERTICAL" prefHeight="1010.0" prefWidth="1.0" />
+            <JFXButton fx:id="btnUpdateBook" layoutX="1436.0" layoutY="710.0" onAction="#btnUpdateBookOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageBooksForm.css" text="Update Book">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnDeleteBook" layoutX="1731.0" layoutY="710.0" onAction="#btnDeleteBookOnAction" prefHeight="41.0" prefWidth="176.0" stylesheets="@../stylesheet/ManageBooksForm.css" text="Delete Book">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnClear2" layoutX="1606.0" layoutY="784.0" onAction="#btnClear2OnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageBooksForm.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <RadioButton fx:id="rdCatagory" layoutX="1211.0" layoutY="89.0" mnemonicParsing="false" text="Category" textFill="#170202" toggleGroup="$btnGroup" />
+            <Label layoutX="1478.0" layoutY="308.0" prefHeight="41.0" prefWidth="96.0" text="Book ID : " />
+            <Label fx:id="lblBookId2" layoutX="1567.0" layoutY="308.0" prefHeight="41.0" prefWidth="249.0" />
+            <JFXTextField fx:id="txtBookName2" layoutX="1478.0" layoutY="364.0" prefHeight="48.0" prefWidth="372.0" promptText="Name" />
+            <JFXTextField fx:id="txtBookEdition2" layoutX="1478.0" layoutY="420.0" prefHeight="48.0" prefWidth="372.0" promptText="Edition" />
+            <JFXButton fx:id="btnSearch" contentDisplay="GRAPHIC_ONLY" layoutX="923.0" layoutY="66.0" onAction="#btnSearchOnAction" prefHeight="62.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/search%20(4).png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXComboBox fx:id="cbPublisher" layoutX="56.0" layoutY="492.0" prefHeight="31.0" prefWidth="458.0" promptText="Select Publisher" />
+            <JFXComboBox fx:id="cbAuthor" layoutX="56.0" layoutY="552.0" prefHeight="31.0" prefWidth="458.0" promptText="Select Author" />
+            <JFXComboBox fx:id="cbCatagory" layoutX="61.0" layoutY="626.0" prefHeight="26.0" prefWidth="458.0" promptText="Select Catagory" />
+            <JFXButton fx:id="btnBack" layoutX="1714.0" layoutY="57.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="71.0" stylesheets="@../stylesheet/ManageBooksForm.css" text="BACK" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="cbPublisher2" layoutX="1478.0" layoutY="485.0" prefHeight="41.0" prefWidth="372.0" promptText="Select Publisher" />
+            <JFXComboBox fx:id="cbAuthor2" layoutX="1478.0" layoutY="547.0" prefHeight="41.0" prefWidth="372.0" promptText="Select Author" />
+            <JFXComboBox fx:id="cbCatagory2" layoutX="1478.0" layoutY="619.0" prefHeight="41.0" prefWidth="372.0" promptText="Select Catagory" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

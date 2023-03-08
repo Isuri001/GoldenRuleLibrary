@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.goldenrulelibrary.controller.BorrowedBookRecordsController">
+   <children>
+      <ImageView fitHeight="1149.0" fitWidth="2004.0" opacity="0.47" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/stylish-soft-blue-curve-lines-abstract-background.jpg" />
+         </image></ImageView>
+      <AnchorPane fx:id="BorrowedBookRecordsContext" layoutX="4.0" prefHeight="1149.0" prefWidth="2000.0">
+         <children>
+            <JFXComboBox fx:id="cbStatusComboBox" layoutX="47.0" layoutY="420.0" prefHeight="31.0" prefWidth="458.0" promptText="Status" />
+            <JFXButton fx:id="btnAddRecords" layoutX="52.0" layoutY="680.0" onAction="#btnAddRecordsOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/BorrowedBookRecords.css" text="Add Records">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnClear" layoutX="276.0" layoutY="680.0" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/BorrowedBookRecords.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <TableView fx:id="tblBorrowedBookRecords" layoutX="621.0" layoutY="242.0" onMouseClicked="#tblBorrowedBookRecordMouseOnAction" prefHeight="626.0" prefWidth="851.0">
+               <columns>
+                  <TableColumn fx:id="columnBorrowedBookRecordsId" prefWidth="209.0" text="Borrowed_Book_Records_Id" />
+                  <TableColumn fx:id="columnMId" minWidth="0.0" prefWidth="106.0" text="M_Id" />
+                  <TableColumn fx:id="columnBookId" prefWidth="113.0" text="Book_Id" />
+                  <TableColumn fx:id="columnIssueDate" prefWidth="132.0" text="Issue Date" />
+                  <TableColumn fx:id="ColumnReturnDate" prefWidth="144.0" text="Return Date" />
+                  <TableColumn fx:id="columnStatus" prefWidth="146.0" text="Status" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtSearch" layoutX="635.0" layoutY="108.0" prefHeight="54.0" prefWidth="333.0" promptText="Search Records" />
+            <RadioButton fx:id="rdMemberId" layoutX="1056.0" layoutY="114.0" mnemonicParsing="false" selected="true" text="Member Id" textFill="#220202">
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdBookId" layoutX="1200.0" layoutY="114.0" mnemonicParsing="false" text="Book ID" textFill="#220202" toggleGroup="$btnGroup" />
+            <JFXButton contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="889.0" layoutY="52.0" prefHeight="54.0" prefWidth="50.0" text=" " />
+            <Separator layoutX="547.0" orientation="VERTICAL" prefHeight="1149.0" prefWidth="0.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="135.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="btnBack" layoutX="1749.0" layoutY="54.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="71.0" stylesheets="@../stylesheet/BorrowedBookRecords.css" text="BACK" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSearch" layoutX="971.0" layoutY="115.0" onAction="#btnSearchOnAction" prefWidth="50.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/search%20(4).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXDatePicker fx:id="datePicker2" layoutX="47.0" layoutY="475.0" prefHeight="39.0" prefWidth="458.0" promptText="Issue Date(MM/DD/YYYY)" />
+            <JFXComboBox fx:id="cbBookComboBox" layoutX="40.0" layoutY="367.0" prefHeight="31.0" prefWidth="458.0" promptText="Book Id" />
+            <JFXComboBox fx:id="cbMemberComboBox" layoutX="40.0" layoutY="320.0" prefHeight="31.0" prefWidth="458.0" promptText="Member Id" />
+            <Label layoutX="35.0" layoutY="251.0" prefHeight="31.0" prefWidth="183.0" text="Borrowed Book Records Id:" />
+            <Label fx:id="lblBorrowedBookRecordId" layoutX="241.0" layoutY="256.0" prefHeight="31.0" prefWidth="249.0" textFill="#280202" />
+            <JFXDatePicker fx:id="datePicker3" layoutX="41.0" layoutY="548.0" prefHeight="31.0" prefWidth="458.0" promptText="Return Date(MM/DD/YYYY)" />
+            <JFXButton fx:id="btnUpdateStatus" layoutX="1613.0" layoutY="809.0" onAction="#btnUpdateStatusOnAction" prefHeight="47.0" prefWidth="150.0" stylesheets="@../stylesheet/BorrowedBookRecords.css" text="Update Status" />
+            <Label fx:id="lblBorrowed_Book_Records_Id" alignment="CENTER" layoutX="1613.0" layoutY="709.0" prefHeight="54.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

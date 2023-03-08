@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.goldenrulelibrary.controller.ManageCatagoryFormController">
+   <children>
+      <ImageView fitHeight="1129.0" fitWidth="2121.0" opacity="0.72" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/stylish-soft-blue-curve-lines-abstract-background.jpg" />
+         </image></ImageView>
+      <AnchorPane fx:id="ManageCatagoryContext" layoutX="-5.0" layoutY="-7.0" prefHeight="1129.0" prefWidth="2112.0">
+         <children>
+            <Label layoutX="47.0" layoutY="295.0" prefHeight="41.0" prefWidth="96.0" text="Catagory ID : " />
+            <Label fx:id="lblCategoryId" layoutX="143.0" layoutY="295.0" prefHeight="41.0" prefWidth="363.0" />
+            <JFXTextField fx:id="txtCategory" layoutX="47.0" layoutY="359.0" prefHeight="31.0" prefWidth="458.0" promptText="Catagory Name" />
+            <JFXComboBox fx:id="cbCategoryComboBox" layoutX="47.0" layoutY="436.0" prefHeight="31.0" prefWidth="458.0" promptText="Age Group" />
+            <JFXButton fx:id="btnAddCatagory" layoutX="47.0" layoutY="542.0" onAction="#btnAddCatagoryOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageCatagoryForm.css" text="Add Catagory" />
+            <JFXButton fx:id="btnClear" layoutX="268.0" layoutY="542.0" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageCatagoryForm.css" text="Clear" />
+            <TableView fx:id="tblCategory" layoutX="740.0" layoutY="138.0" prefHeight="628.0" prefWidth="661.0">
+               <columns>
+                  <TableColumn fx:id="columnId" prefWidth="219.0" text="C_ID" />
+                  <TableColumn fx:id="columnName" minWidth="0.0" prefWidth="259.0" text="Catagory Name" />
+                  <TableColumn fx:id="columnAgeGroup" prefWidth="182.0" text="Age Group" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtSearch" layoutX="670.0" layoutY="43.0" prefHeight="54.0" prefWidth="333.0" promptText="Search Catagory" />
+            <RadioButton fx:id="rdId" ellipsisString="" layoutX="1139.0" layoutY="69.0" mnemonicParsing="false" selected="true" text="Id" textFill="#250707">
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdCatagoryName" ellipsisString="" layoutX="1240.0" layoutY="69.0" mnemonicParsing="false" text="Catagory Name" textFill="#250707" toggleGroup="$btnGroup" />
+            <Separator layoutX="547.0" orientation="VERTICAL" prefHeight="1129.0" prefWidth="0.0" />
+            <JFXButton fx:id="btnSearch" layoutX="1028.0" layoutY="39.0" onAction="#btnSearchOnAction" prefHeight="61.0" prefWidth="58.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/search%20(4).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBack" layoutX="1663.0" layoutY="75.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="71.0" stylesheets="@../stylesheet/ManageCatagoryForm.css" text="BACK" textFill="#fcf3f3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageCatagoryForm.css" />
+            <URL value="@../stylesheet/ManageCatagoryForm.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+
+#btnBack{
+      -fx-background-color: black;
+  }
+#btnPrint{
+    -fx-background-color: blue;
+}#btnManageIncome{
+     -fx-background-color: white;
+ }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4236f00-4bcf-4eaf-898e-0e3376252b8b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2HfRnodH7S4WzpfqiTPtvgn1gOC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lk/ijse/goldenrulelibrary/assert" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final\GoldenRuleLibrary (1)\GoldenRuleLibrary\GoldenRuleLibrary\src\lk\ijse\goldenrulelibrary\assert" />
+      <recent name="E:\Final\GoldenRuleLibrary (1)\GoldenRuleLibrary\GoldenRuleLibrary\src\lk\ijse\goldenrulelibrary\util" />
+      <recent name="C:\Users\DELL\IdeaProjects\SkyLineLibrary - Copy-Done\SkyLineLibrary - Copy-Done\src\lk\ijse\skylinelibrary\assert" />
+      <recent name="C:\Users\DELL\IdeaProjects\SkyLineLibrary\src\lk\ijse\skylinelibrary\assert" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="lk.ijse.goldenrulelibrary.dao.custom.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.goldenrulelibrary.dao.util" />
+      <recent name="lk.ijse.goldenrulelibrary.dao.custom.util" />
+      <recent name="lk.ijse.goldenrulelibrary.dao.custom.impl" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
+      <module name="GoldenRuleLibrary" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4236f00-4bcf-4eaf-898e-0e3376252b8b" name="Changes" comment="" />
+      <created>1668674322834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668674322834</updated>
+      <workItem from="1668674324382" duration="1062000" />
+      <workItem from="1668675732019" duration="11385000" />
+      <workItem from="1668689471497" duration="634000" />
+      <workItem from="1668690137394" duration="734000" />
+      <workItem from="1668694939091" duration="7310000" />
+      <workItem from="1668746515622" duration="13172000" />
+      <workItem from="1668791045349" duration="54000" />
+      <workItem from="1668798773238" duration="12000" />
+      <workItem from="1674712363066" duration="633000" />
+      <workItem from="1674713040676" duration="6729000" />
+      <workItem from="1674831082018" duration="145000" />
+      <workItem from="1675566581493" duration="13904000" />
+      <workItem from="1675587975628" duration="2968000" />
+      <workItem from="1675668213040" duration="11000" />
+      <workItem from="1675925562290" duration="12467000" />
+      <workItem from="1675958329067" duration="75000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GoldenRuleLibrary$AppInitializer.ic" NAME="AppInitializer Coverage Results" MODIFIED="1674712975199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

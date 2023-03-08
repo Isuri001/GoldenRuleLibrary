@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.goldenrulelibrary.controller.ManageMemberFormController">
+   <children>
+      <ImageView fitHeight="1007.0" fitWidth="2016.0" layoutX="-6.0" layoutY="7.0" opacity="0.88" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/stylish-soft-blue-curve-lines-abstract-background.jpg" />
+         </image></ImageView>
+      <AnchorPane fx:id="ManageMembersContext" layoutX="-14.0" layoutY="7.0" prefHeight="1007.0" prefWidth="2010.0">
+         <children>
+            <Label layoutX="47.0" layoutY="295.0" prefHeight="41.0" prefWidth="96.0" text="Member ID : " textFill="#2c0505" />
+            <Label fx:id="lblMemberId" layoutX="143.0" layoutY="295.0" prefHeight="41.0" prefWidth="363.0" />
+            <JFXTextField fx:id="txtName" layoutX="47.0" layoutY="359.0" onKeyReleased="#txtNameOnAction" prefHeight="31.0" prefWidth="458.0" promptText="Name" unFocusColor="#fff9f9" />
+            <JFXTextField fx:id="txtAddress" layoutX="47.0" layoutY="415.0" prefHeight="31.0" prefWidth="458.0" promptText="Address" unFocusColor="#f5eeee" />
+            <JFXTextField fx:id="txtContact" layoutX="47.0" layoutY="477.0" onKeyReleased="#txtContactOnAction" prefHeight="31.0" prefWidth="458.0" promptText="Contact" unFocusColor="#eee9e9" />
+            <JFXComboBox fx:id="cbSelectType" layoutX="47.0" layoutY="537.0" prefHeight="31.0" prefWidth="458.0" promptText="Select Type" unFocusColor="#fcf8f8" />
+            <JFXButton fx:id="btnAddMember" layoutX="56.0" layoutY="639.0" onAction="#btnAddMemberOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="Add Member">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnClear" layoutX="276.0" layoutY="639.0" onAction="#btnClearOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <TableView fx:id="tblMember" layoutX="621.0" layoutY="163.0" onMouseClicked="#tblMemberClickOnAction" prefHeight="628.0" prefWidth="661.0">
+               <columns>
+                  <TableColumn fx:id="columnMemberId" prefWidth="111.0" text="Member ID" />
+                  <TableColumn fx:id="columnName" minWidth="0.0" prefWidth="130.0" text="Name" />
+                  <TableColumn fx:id="columnaddress" prefWidth="210.0" text="Address" />
+                  <TableColumn fx:id="columnType" prefWidth="103.0" text="Type" />
+                  <TableColumn fx:id="columnContact" prefWidth="106.0" text="Contact" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtSearch" layoutX="606.0" layoutY="63.0" prefHeight="54.0" prefWidth="333.0" promptText="Search Member" unFocusColor="#f5eeee" />
+            <RadioButton fx:id="rdId" layoutX="1029.0" layoutY="80.0" mnemonicParsing="false" selected="true" text="Id" textFill="#250101">
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdName" layoutX="1131.0" layoutY="80.0" mnemonicParsing="false" text="Name" textFill="#250101" toggleGroup="$btnGroup" />
+            <JFXButton fx:id="btnSearch" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="939.0" layoutY="53.0" onAction="#btnSearchOnAction" prefHeight="54.0" prefWidth="50.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/search%20(4).png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXTextField fx:id="txtName2" layoutX="1343.0" layoutY="363.0" prefHeight="54.0" prefWidth="320.0" promptText="Name" unFocusColor="#fff8f8" />
+            <JFXTextField fx:id="txtAddress2" layoutX="1343.0" layoutY="438.0" prefHeight="54.0" prefWidth="333.0" promptText="Address" unFocusColor="#f8f3f3" />
+            <JFXTextField fx:id="txtContact2" layoutX="1343.0" layoutY="508.0" prefHeight="54.0" prefWidth="333.0" promptText="Contact" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="cbSelectType2" layoutX="1337.0" layoutY="585.0" prefHeight="54.0" prefWidth="333.0" promptText="Select Type" unFocusColor="#fcf6f6" />
+            <Separator layoutX="544.0" orientation="VERTICAL" prefHeight="1007.0" prefWidth="8.0" />
+            <JFXButton fx:id="btnUpdateMember" layoutX="1356.0" layoutY="695.0" onAction="#btnUpdateMemberOnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="Update Member">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnDeleteMember" layoutX="1657.0" layoutY="695.0" onAction="#btnDeleteMemberOnAction" prefHeight="41.0" prefWidth="176.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="Delete Member">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnClear2" layoutX="1493.0" layoutY="791.0" onAction="#btnClear2OnAction" prefHeight="41.0" prefWidth="183.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnBack" layoutX="1820.0" layoutY="47.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="71.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="BACK" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="1343.0" layoutY="305.0" prefHeight="41.0" prefWidth="96.0" text="Member ID :" />
+            <Label fx:id="lblMemberId2" layoutX="1448.0" layoutY="305.0" prefHeight="41.0" prefWidth="235.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

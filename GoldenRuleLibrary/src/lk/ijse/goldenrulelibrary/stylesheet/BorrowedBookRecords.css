@@ -1,0 +1,19 @@
+#btnBorrowedBookRecords {
+    -fx-background-color: white;
+}#btnAddRecords{
+        -fx-background-color: green;
+}#btnAddRecords:hover{
+     -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #06c2ae);
+ }#btnClear,#btnClear2{
+    -fx-background-color: yellow;
+}#btnUpdateStatus {
+         -fx-background-color: blue;
+     }#btnClear:hover,#btnClear2:hover{
+     -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #eadc24);
+ }#btnDeleteRecords {
+           -fx-background-color: red;
+       }#btnBack{
+                   -fx-background-color: black;
+    }#btnDeleteRecords:hover{
+         -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #f52424);
+                          }

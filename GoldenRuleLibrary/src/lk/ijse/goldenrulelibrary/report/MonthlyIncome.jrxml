@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MonthlyIncome" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d28d97a0-ed7d-4453-8d2f-2ab90784dac7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="total" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="date" class="java.lang.String"/>
+	<field name="income" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="28" width="420" height="30" uuid="8f61f815-2dce-4fbc-b94b-8b76e2a3a6a1"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[GOLDEN RULE LIBRARY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="58" width="586" height="24" uuid="4995ece9-0080-452e-88a1-7a4dde509517"/>
+				<text><![CDATA[=================================================================================================================]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="155" y="1" width="275" height="30" uuid="faf8aaad-ee47-45a0-85a5-552fa1e788f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Monthly Income]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="10" width="155" height="50" uuid="0efcb82c-b1d0-4a58-afde-6319cfaf88d6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Date ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="5" width="140" height="51" uuid="33725739-99a8-4da5-9bbe-4d603a1b3f49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Income]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="119" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="50" width="145" height="40" uuid="b58b0948-a8bd-4766-ad97-2b61ad64446b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b23532a-6e55-4794-b35e-c0d9e913b33a"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="60" width="140" height="43" uuid="14a61940-8955-42e1-82dd-38987c7f787e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0ed1540a-2cf5-461e-a496-e49f7f80d2d2"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{income}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="10" width="140" height="30" uuid="cd1cc220-45cc-44bb-9e93-b6e253f6bbb7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Total Income]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="50" width="595" height="30" uuid="6c8b8053-ba43-4901-b676-bfa7448f464e"/>
+				<text><![CDATA[=====================================================================================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="74" width="300" height="30" uuid="ba87380e-685e-433a-a727-cdbb92108b29"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[System By: Institute Of Java Software Engeneering ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="0" width="595" height="20" uuid="6c8763a9-4c23-4b55-a690-a88894d5bf61"/>
+				<text><![CDATA[=====================================================================================================================]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="10" width="100" height="30" uuid="9e11c3a3-cb77-4957-a46d-4de62bbdb83b"/>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

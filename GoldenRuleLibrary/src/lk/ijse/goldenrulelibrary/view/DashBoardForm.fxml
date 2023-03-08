@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashBoardContext" prefHeight="1000.0" prefWidth="1950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.goldenrulelibrary.controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="2071.0" layoutX="-119.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assert/jose-duarte-ma48HHDJCXw-unsplash.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" prefHeight="161.0" prefWidth="1743.0" text="Welcome To GOLDEN rULE Library ....!" textFill="#f2ecec">
+         <font>
+            <Font name="Castellar" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="161.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/Open%20book%20education%20gold%20logo%20vector%20image%20on%20VectorStock.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnManageMembers" alignment="BOTTOM_CENTER" layoutX="102.0" layoutY="192.0" onAction="#btnManageMembersOnAction" opacity="0.34" prefHeight="253.0" prefWidth="365.0" stylesheets="@../stylesheet/ManageMemberForm.css" text="Manage Members" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnManageBooks" alignment="BOTTOM_CENTER" layoutX="102.0" layoutY="453.0" onAction="#btnManageBooksOnAction" opacity="0.34" prefHeight="253.0" prefWidth="365.0" text="Manage Books" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton fx:id="btnBorrowedBookRecords" alignment="BOTTOM_CENTER" layoutX="519.0" layoutY="192.0" onAction="#btnBorrowedBookRecordsOnAction" opacity="0.34" prefHeight="253.0" prefWidth="404.0" text="Borrowed Book Records" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+            <URL value="@../stylesheet/BorrowedBookRecords.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton fx:id="btnManageAuthors" alignment="BOTTOM_CENTER" layoutX="519.0" layoutY="453.0" onAction="#btnManageAuthorsOnAction" opacity="0.34" prefHeight="253.0" prefWidth="404.0" text="Manage Authors" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+            <URL value="@../stylesheet/ManageAuthors.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton fx:id="btnManagePublishers" alignment="BOTTOM_CENTER" layoutX="1407.0" layoutY="192.0" onAction="#btnManagePublishersOnAction" opacity="0.34" prefHeight="253.0" prefWidth="404.0" text="Manage Publishers" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+            <URL value="@../stylesheet/ManageAuthors.css" />
+            <URL value="@../stylesheet/ManagePublishers.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton fx:id="btnManageCategory" alignment="BOTTOM_CENTER" layoutX="964.0" layoutY="192.0" onAction="#btnManageCatagoryOnAction" opacity="0.34" prefHeight="253.0" prefWidth="404.0" text="Manage Catagory" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+            <URL value="@../stylesheet/ManageAuthors.css" />
+            <URL value="@../stylesheet/ManagePublishers.css" />
+            <URL value="@../stylesheet/ManageCatagoryForm.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton fx:id="btnManageExpenditure" alignment="BOTTOM_CENTER" layoutX="964.0" layoutY="453.0" onAction="#btnManageExpenditureOnAction" opacity="0.34" prefHeight="253.0" prefWidth="404.0" text="Manage Expenditure" textFill="#1e0101">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="31.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+            <URL value="@../stylesheet/ManageAuthors.css" />
+            <URL value="@../stylesheet/ManagePublishers.css" />
+            <URL value="@../stylesheet/ManageCatagoryForm.css" />
+            <URL value="@../stylesheet/ManageExpenditure.css" />
+         </stylesheets>
+      </JFXButton>
+
+      <JFXButton fx:id="btnLogOut" alignment="BOTTOM_RIGHT" layoutX="1639.0" layoutY="829.0" onAction="#btnLogOutOnAction" opacity="0.34" prefHeight="76.0" prefWidth="91.0" text="  " textFill="#1e0101">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../stylesheet/ManageMemberForm.css" />
+            <URL value="@../stylesheet/ManageBooksForm.css" />
+            <URL value="@../stylesheet/ManageAuthors.css" />
+            <URL value="@../stylesheet/ManagePublishers.css" />
+            <URL value="@../stylesheet/ManageCatagoryForm.css" />
+            <URL value="@../stylesheet/ManageExpenditure.css" />
+            <URL value="@../stylesheet/LogOut.css" />
+         </stylesheets>
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/logout%20(2).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="1650.0" layoutY="917.0" prefHeight="21.0" prefWidth="88.0" text="Log Out" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="626.0" layoutY="221.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/borrow%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="206.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/team%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="203.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/open-book.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="641.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/writer%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1101.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/app.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1114.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/accounting.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1518.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/publish.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMemberCount" layoutX="418.0" layoutY="192.0" prefHeight="34.0" prefWidth="67.0" textFill="#170101">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookCount" layoutX="418.0" layoutY="453.0" prefHeight="34.0" prefWidth="49.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRecordsCount" layoutX="873.0" layoutY="192.0" prefHeight="34.0" prefWidth="49.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAuthorCount" layoutX="873.0" layoutY="453.0" prefHeight="34.0" prefWidth="49.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCatagoryCount" layoutX="1319.0" layoutY="192.0" prefHeight="34.0" prefWidth="49.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblExpenditureCount" layoutX="1319.0" layoutY="453.0" prefHeight="34.0" prefWidth="49.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPublisherCount" layoutX="1762.0" layoutY="192.0" prefHeight="34.0" prefWidth="49.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnManageIncome" alignment="BOTTOM_CENTER" layoutX="1407.0" layoutY="457.0" onAction="#btnManageIncomeOnAction" opacity="0.34" prefHeight="245.0" prefWidth="404.0" stylesheets="@../stylesheet/ManageIncome.css" text="Manage Income">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="39.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1509.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/growth.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

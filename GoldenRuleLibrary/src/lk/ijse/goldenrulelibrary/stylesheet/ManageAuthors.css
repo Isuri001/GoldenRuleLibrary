@@ -1,0 +1,14 @@
+#btnManageAuthors{
+    -fx-background-color: white;
+}#btnAddAuthor{
+     -fx-background-color: green;
+}#btnBack{
+      -fx-background-color: black;
+}#btnAddAuthor:hover{
+     -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #06c2ae);
+ }
+#btnClear{
+    -fx-background-color: yellow;
+}#btnClear:hover{
+     -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #eadc24);
+ }

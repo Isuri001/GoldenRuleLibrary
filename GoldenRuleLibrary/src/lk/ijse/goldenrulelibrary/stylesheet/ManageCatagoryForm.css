@@ -1,0 +1,82 @@
+#btnManageCategory{
+    -fx-background-color: white;
+}#btnAddCatagory{
+     -fx-background-color: green;
+}#btnBack{
+      -fx-background-color: black;
+}#btnAddCatagory:hover{
+     -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #06c2ae);
+ }
+#btnClear,#btnClear2{
+    -fx-background-color: yellow;
+}#btnClear:hover,#btnClear2:hover{
+     -fx-background-color: linear-gradient(from 82% 90% to 90% 90% , #ffffff, #eadc24);
+ }
+.combo-box .list-cell
+{
+    -fx-background: rgba(255, 255, 255, 0);
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+    -fx-text-fill: #070000;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: rgba(229, 155, 155, 0), rgba(255, 255, 255, 0);
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popup .list-view .list-cell
+{
+
+    -fx-text-fill: #090606;
+    /* No alternate highlighting */
+    -fx-background-color: rgba(0, 0, 0, 0.66);
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: rgba(2, 1, 1, 0);
+    -fx-background-color: #035d4a;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: rgb(14, 5, 5);
+    -fx-text-fill: white;
+}
+
+.combo-box-base
+{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+    -fx-background-color: rgba(213, 0, 0, 0), rgba(111, 238, 255, 0), rgba(182, 182, 182, 0), rgba(255, 234, 0, 0);
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+    -fx-text-fill: #fdf3f3;
+
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+//-fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+
